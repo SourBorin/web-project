@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sou borin</title>
+        <style>
+            body{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+            }
+            .container{
+                background-color: blue;
+                padding: 1rem;
+                border-radius: 10px;
+                width: 300px;
+
+
+            }
+            .btn{
+                padding: 0.5rem 2rem;
+                border: none;
+                outline: none;
+                font-weight: bolder;
+                border-radius: 10px;
+                cursor: pointer;
+
+            }
+            .btnPrimary{
+                color: greenyellow;
+                background-color: red;
+            }
+            .btnSecondary{
+                padding: 0.5rem 1rem;
+                color: blue;
+                background-color: yellow;
+            }
+            .moving:hover{
+                margin-left: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <h2 class="text">តើអ្នលស្រលាញ់ខ្ញុំដែរ​ ​ឬ​ ទេ​? 💚💚</h2>
+            <buton class="btn btnPrimary">Yes</buton> 
+
+            <buton class="btn btnSecondary moving">NO</buton>
+            
+        </section>
+        <script>
+            const btnAgree = document.querySelector(".btnPrimary");
+            const btnDisagree = document.querySelector(".btnSecondary");
+            const text = document.querySelector(".text");
+
+            btnAgree.addEventListener("click", ()=>{
+                text. innerText = "ខ្ញុំក៏ស្រលាញ់អ្នកដែរ!💚"
+            });
+            btnDisagree.addEventListener("click", ()=>{
+                text. innerText = "មនុស្សអាក្រក់​ 🐶"
+
+            });
+
+
+        </script>
+    </body>
+</html>
+
